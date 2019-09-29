@@ -24,28 +24,54 @@
   </header>
 
   <main>
-  <section>
-    <h2>Опции</h2>
-    <h3>Сетка:</h3>
+  <section class="filters">
+    <h2 class="visually-hidden">Опции</h2>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <fieldset>
+      <legend>Сетка:</legend>
    <ul>
-       <li>Адаптивная</li>
-       <li>Фиксированная</li>
-       <li>Резиновая</li>
+       <li>
+         <input type="radio" name="network-group" value="adaptive" id="filter-adaptive">
+         <label for="filter-adaptive">Адаптивная</label>
+        </li>
+       <li>
+          <input type="radio" name="network-group" value="fixed" id="filter-fixed">
+          <label for="filter-fixed">Фиксированная</label>
+        </li>
+       <li>
+          <input type="radio" name="network-group" value="rubber" id="filter-rubber">
+          <label for="filter-rubber">Резиновая</label>
+        </li>
    </ul>
+    </fieldset>
 
-   <h3>Особенности:</h3>
+    <fieldset>
+   <legend>Особенности:</legend>
    <ul>
-       <li>Слайдер</li>
-       <li>Блок преимуществ</li>
-       <li>Новости</li>
-       <li>Галерея</li>
-       <li>Корзина</li>
+       <li>
+         <input type="checkbox" name="slider" id="filter-slider">
+         <label for="filter-slider">Слайдер</label>
+        </li>
+       <li>
+         <input type="checkbox" name="benefits" id="filter-benefits">
+         <label for="filter-benefits">Блок преимуществ</label>label>
+        </li>
+       <li>
+         <input type="checkbox" name="news" id="filter-news">
+         <label for="filter-news">Новости</label>/label>
+        </li>
+       <li>
+         <input type="checkbox" name="cart" id="filter-cart">
+         <label for="filter-cart">Корзина</label>
+       </li>
    </ul>
-   <button type="button">Показать</button>
+   <button type="submit">Показать</button>
+    </fieldset>
+    </form>
    </section>
 
    <section>
-     <h2>Примеры работ</h2>
+     <h2 class="visually-hidden">Примеры работ</h2>
     <div class="sedona">
         <img src="img-sedona.jpg" width="359" height="616" alt="Sedona">
     </div>
@@ -65,6 +91,24 @@
         <img src="img-kvast.jpg" width="359" height="616" alt="Kvast">
     </div>
    </section>
+   <section>
+      <h2>Напишите нам</h2>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label for="appointment-name">Ваще имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+            <label for="appointment-email">Ваш e-mail:</label>
+            <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+            <label for="appointment-letter">Текст письма:</label>
+            <input id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+    </section>
 
   </main>
 
