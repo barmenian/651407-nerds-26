@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
   </head>
   <body>
   <header class="main-header">
@@ -23,7 +24,7 @@
   <main>
   <section>
     <h3 class="visually-hidden">Наши предложения</h3>
-    <div>  
+    <div class="offer">  
     <img src="illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
     <h3>Веб-сайты</h3>
     <p>Мир никогда не будет прежним
@@ -31,7 +32,7 @@
     <button type="button">Заказать</button> 
     </div>
 
-    <div>  
+    <div class="offer">  
         <img src="illustration-2.jpg" width="300" height="146" alt="Приложения">
         <h3>Приложения</h3>
         <p>Покорите топ-10 приложений в
@@ -39,7 +40,7 @@
         <button type="button">Заказать</button> 
    </div>
 
-   <div>  
+   <div class="offer">  
       <img src="illustration-3.jpg" width="300" height="146" alt="Презентации">
       <h3>Презентации</h3>
       <p>Вы даже не представляете,
@@ -48,7 +49,7 @@
       </div>
   </section>
 
-  <section>
+  <section class="popup-letter">
     <h2>Напишите нам</h2>
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -56,12 +57,12 @@
           <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
-          <label for="appointment-email">Ваш e-mail:</label>
-          <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+        <label for="appointment-email">Ваш e-mail:</label>
+        <inputmode id="appointment-email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p>
           <label for="appointment-letter">Текст письма:</label>
-          <input id="appointment-letter" inputmode="email" name="letter" placeholder="В свободной форме">
+          <input id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
       </p>
       <button type="submit">Отправить</button>
   </form>
@@ -69,11 +70,11 @@
   </main>
 
   <footer>
-      <div>
+      <div class="contacts">
         <ul>
-          <li><a href="#"><img src="vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
-          <li><a href="#"><img src="fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
-          <li><a href="#"><img src="insta-icon.svg" width="80" height="80" alt="Инстаграм"></a></li>
+          <li><a class="contact-button" href="#"><img src="vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
+          <li><a class="contact-button" href="#"><img src="fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
+          <li><a class="contact-button" href="#"><img src="insta-icon.svg" width="80" height="80" alt="Инстаграм"></a></li>
        </ul>
        <h2>Давайте дружить, это выгодно!</h2>
        <p>Скидка 10% для друзей из социальных сетей.</p>
