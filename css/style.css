@@ -7,8 +7,7 @@ body {
     line-height: 12px;
     font-weight: 500;
     color: #000000;
-    text-transform: uppercase;
-  
+    text-transform: uppercase;  
     background-color: #ffffff;    
 }
 
@@ -19,51 +18,56 @@ a {
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: #000000;
-  
+    color: #000000;  
     background-color: #eeeeee;
   }
 
-  .main-header-logo a:/*тут должно быть нажатие*/
+.main-header-logo a:/*тут должно быть нажатие*/
 
-  .site-navigation {
+.site-navigation 
+.cart-link a:hover {
       list-style: none;
   }
 
-  .site-navigation a{
-      text-transform: uppercase;
-      color: #000000;
+.cart-link a
+.site-navigation a {
+      text-transform: uppercase;      
   }
-
-  .site-navigation a:hover {
+  
+.cart-link a:hover
+.site-navigation a:hover {
       color: #fb565a;  
   }
 
-  .site-navigation a:active {
-      text-decoration: underline 2px solid #fb565a;
+.cart-link a:active
+.site-navigation a:active {
+      color: rgba(0, 0, 0, 0.3);    
+  }  
+
+.cart-link
+.site-navigation {
+    text-decoration: underline 2px solid #fb565a;
   }
-
-  .site-navigation /*клик по ссылке????*/
-
-  .offer {
+  
+.offer {
       text-align: left;
   }
 
-  .offer h3 {
+.offer h3 {
       font-size: 24px;  
       line-height: 30px;
       text-decoration: uppercase;
       /*тут должна быть кнопка*/
-  }
+}
 
-  .contact-button a:hover {
+.contact-button a:hover {
 
-  }
+}
 
-  .contact-button a:/*тут должно быть нажатие*/{
+.contact-button a:/*тут должно быть нажатие*/{
       
-  }
+}
 
-  .popup-letter {
+.popup-letter {
       display: none;
-  }
+}
