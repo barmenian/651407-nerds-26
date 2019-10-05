@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <nav class="main-navigation">
       <a class="main-header-logo">
@@ -27,7 +27,7 @@
     <h2 class="visually-hidden">Опции</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <fieldset>
-      <legend>Сетка:</legend>
+      <legend >Сетка:</legend>
    <ul>
        <li>
          <input type="radio" name="network-group" value="adaptive" id="filter-adaptive">
@@ -64,7 +64,7 @@
          <label for="filter-cart">Корзина</label>
        </li>
    </ul>
-   <button type="submit">Показать</button>
+   <input type="button" class="button-show" value="Показать">
     </fieldset>
     </form>
    </section>
@@ -99,7 +99,7 @@
         </p>
         <p>
           <label for="appointment-email">Ваш e-mail:</label>
-          <inputmode id="appointment-email" type="email" name="email" placeholder="email@example.com">
+          <input id="appointment-email" inputmode="email" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="appointment-letter">Текст письма:</label>

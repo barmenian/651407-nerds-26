@@ -7,8 +7,12 @@ body {
     line-height: 12px;
     font-weight: 500;
     color: #000000;
-    text-transform: uppercase;  
+    text-align: left;
     background-color: #ffffff;    
+}
+
+.catalog-page {
+    color: #eeeeee
 }
 
 a {
@@ -20,54 +24,139 @@ a {
     line-height: 30px;
     color: #000000;  
     background-color: #eeeeee;
-  }
-
-.main-header-logo a:/*тут должно быть нажатие*/
+}
 
 .site-navigation 
 .cart-link a:hover {
-      list-style: none;
-  }
+    list-style: none;
+}
 
 .cart-link a
 .site-navigation a {
-      text-transform: uppercase;      
-  }
+    text-transform: uppercase;      
+}
   
 .cart-link a:hover
 .site-navigation a:hover {
-      color: #fb565a;  
-  }
+    color: #fb565a;  
+}
 
 .cart-link a:active
 .site-navigation a:active {
-      color: rgba(0, 0, 0, 0.3);    
-  }  
-
-.cart-link
-.site-navigation {
-    text-decoration: underline 2px solid #fb565a;
-  }
+    color: rgba(0, 0, 0, 0.3);    
+}  
   
 .offer {
-      text-align: left;
-  }
+    text-align: left;
+}
 
 .offer h3 {
-      font-size: 24px;  
-      line-height: 30px;
-      text-decoration: uppercase;
-      /*тут должна быть кнопка*/
+    font-size: 24px;  
+    line-height: 30px;
+    text-transform: uppercase;          
 }
 
-.contact-button a:hover {
-
+.button-red
+.button-green
+.button-yellow {
+    font-size: 16px;
+    width: 160px;
+    height: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.contact-button a:/*тут должно быть нажатие*/{
-      
+.button-red {  
+  background-color: #e74246;
+}
+
+.button-green {  
+    background-color: #00ca74;
+}
+
+.button-yellow {  
+    background-color: #efc84a;
+}
+
+.button-red:hover {
+    background-color: #e74246;    
+} 
+
+.button-green:hover {
+    background-color: #00bc6c;
+}
+
+.button-yellow:hover {
+    background-color: #eab534;
+}
+
+.button-red:active {
+    background-color: #d7373b; 
+    color: rgba(255, 255, 255, 0.3);
+
+} 
+
+.button-green:active {
+    background-color: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-yellow:active {
+    background-color: #e5a722;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-button a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;    
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 20px;
+}
+
+.filter-input:hover + label {
+    color: #283136;
+}
+
+.filter-input:disabled + label {
+    color: rgba(40, 49, 54, 0.3);
+}
+
+.button-show {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;  
+}
+
+.button-show:hover {
+    background-color: #dfdfdf;
+}
+
+.button-show:active {
+    background-color: #d5d5d5;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-text {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
 }
 
 .popup-letter {
-      display: none;
+    display: none;
 }

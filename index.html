@@ -9,7 +9,7 @@
   <header class="main-header">
     <nav class="main-navigation">
     <a class="main-header-logo">
-      <img src="nerds-logo.png." width="160" height="65" alt="Дизайн студия Nerds">
+      <img src="nerds-logo.svg" width="160" height="65" alt="Дизайн студия Nerds">
     </a>
     <ul class="site-navigation">
       <li><a href="studio.html">Студия</a></li>
@@ -29,15 +29,15 @@
     <h3>Веб-сайты</h3>
     <p>Мир никогда не будет прежним
     после того как увидит ваш сайт</p>
-    <button type="button">Заказать</button> 
+    <input type="button" class="button-red" value="Заказать">
     </div>
 
     <div class="offer">  
-        <img src="illustration-2.jpg" width="300" height="146" alt="Приложения">
-        <h3>Приложения</h3>
-        <p>Покорите топ-10 приложений в
-        AppStore и Google Play</p>
-        <button type="button">Заказать</button> 
+      <img src="illustration-2.jpg" width="300" height="146" alt="Приложения">
+      <h3>Приложения</h3>
+      <p>Покорите топ-10 приложений в
+      AppStore и Google Play</p>
+      <input type="button" class="button-green" value="Заказать"> 
    </div>
 
    <div class="offer">  
@@ -45,7 +45,7 @@
       <h3>Презентации</h3>
       <p>Вы даже не представляете,
       насколько вы изумительны</p>
-      <button type="button">Заказать</button> 
+      <input type="button" class="button-yellow" value="Заказать"> 
       </div>
   </section>
 
@@ -53,16 +53,16 @@
     <h2>Напишите нам</h2>
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-          <label for="appointment-name">Ваще имя:</label>
-          <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        <label for="appointment-name">Ваще имя:</label>
+        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="appointment-email">Ваш e-mail:</label>
-        <inputmode id="appointment-email" type="email" name="email" placeholder="email@example.com">
+        <input id="appointment-email" inputmode="email" name="email" placeholder="email@example.com">
       </p>
       <p>
-          <label for="appointment-letter">Текст письма:</label>
-          <input id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
+        <label for="appointment-letter">Текст письма:</label>
+        <input id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
       </p>
       <button type="submit">Отправить</button>
   </form>
@@ -76,7 +76,7 @@
           <li><a class="contact-button" href="#"><img src="fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
           <li><a class="contact-button" href="#"><img src="insta-icon.svg" width="80" height="80" alt="Инстаграм"></a></li>
        </ul>
-       <h2>Давайте дружить, это выгодно!</h2>
+       <h2 class="footer-text">Давайте дружить, это выгодно!</h2>
        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
   </footer>
