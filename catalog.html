@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="navigation">
+    <nav class="main-navigation">
       <a class="main-logo">
-        <img src="nerds-logo.svg" width="160" height="65" alt="Дизайн студия Nerds">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн студия Nerds">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
@@ -31,16 +33,16 @@
           <legend>Сетка:</legend>
           <ul>
             <li>
-              <input class="network-group-radio" type="radio" name="network-group" value="adaptive" id="filter-adaptive"
+              <input class="layout-group-radio" type="radio" name="layout-group" value="adaptive" id="filter-adaptive"
                 checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input class="network-group-radio" type="radio" name="network-group" value="fixed" id="filter-fixed">
+              <input class="layout-group-radio" type="radio" name="layout-group" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li>
-              <input class="network-group-radio" type="radio" name="network-group" value="rubber" id="filter-rubber">
+              <input class="layout-group-radio" type="radio" name="layout-group" value="rubber" id="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
@@ -76,7 +78,7 @@
       <li class="template-item">
         <img src="img-sedona.jpg" width="359" height="616" alt="Sedona">
       </li>
-      <li class="templates-item">
+      <li class="template-item">
         <img src="img-pink.jpg" width="359" height="616" alt="Pink">
       </li>
       <li class="template-item">
@@ -98,12 +100,12 @@
   <footer class="main-footer">
     <div>
       <ul class="social">
-        <li><a class="contact-button" href="#"><img src="vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
-        <li><a class="contact-button" href="#"><img src="fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
-        <li><a class="contact-button" href="#"><img src="insta-icon.svg" width="80" height="80" alt="Инстаграм"></a>
+        <li><a class="contact-button" href="#"><img src="img/vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
+        <li><a class="contact-button" href="#"><img src="img/fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
+        <li><a class="contact-button" href="#"><img src="img/insta-icon.svg" width="80" height="80" alt="Инстаграм"></a>
         </li>
       </ul>
-      <p class="footer-tegline"><b>Давайте дружить, это выгодно!</b>
+      <p class="footer-tegline"><span>Давайте дружить, это выгодно!</span>
         Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>

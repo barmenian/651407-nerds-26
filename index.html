@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href=https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">  
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="navigation">
+    <nav class="main-navigation">
       <a class="main-logo">
-        <img src="nerds-logo.svg" width="160" height="65" alt="Дизайн студия Nerds">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн студия Nerds">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
@@ -28,27 +30,27 @@
       <h2 class="visually-hidden">Наши предложения</h2>
       <ul class="offer-list">
         <li class="offer-item sites">
-          <img src="illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+          <img class="item__img item__img--red offer-style" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним
             после того как увидит ваш сайт</p>
-          <button type="button">Заказать</button>
+          <button class="offer__button offer__button--red button-style" type="button">Заказать</button>
         </li>
 
-        <li class="offer-item apps">
-          <img src="illustration-2.jpg" width="300" height="146" alt="Приложения">
+        <li class="offer-item apps">         
+          <img class="item__img item__img--green offer-style" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в
             AppStore и Google Play</p>
-          <button type="button">Заказать</button>
+          <button class="offer__button offer__button--green button-style" type="button">Заказать</button>
         </li>
 
-        <li class="offer-item presentations">
-          <img src="illustration-3.jpg" width="300" height="146" alt="Презентации">
+        <li class="offer-item presentations">          
+          <img class="item__img item__img--yellow offer-style" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не представляете,
             насколько вы изумительны</p>
-          <button type="button">Заказать</button>
+          <button class="offer__button offer__button--yellow button-style" type="button">Заказать</button>
         </li>
       </ul>
     </section>
@@ -66,7 +68,9 @@
         </p>
         <p>
           <label for="appointment-letter">Текст письма:</label>
-          <input id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
+          <textarea id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
+            В свободной форме
+          </textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
@@ -75,13 +79,12 @@
 
   <footer class="main-footer">
     <div>
-      <ul class="social">
-        <li><a class="contact-button" href="#"><img src="vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
-        <li><a class="contact-button" href="#"><img src="fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
-        <li><a class="contact-button" href="#"><img src="insta-icon.svg" width="80" height="80" alt="Инстаграм"></a>
-        </li>
+      <ul class="footer-social">
+        <li><a class="footer-social__button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+        <li><a class="footer-social__button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+        <li><a class="footer-social__button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
       </ul>
-      <p class="footer-tegline"><b>Давайте дружить, это выгодно!</b>
+      <p class="footer-tegline"><span>Давайте дружить, это выгодно!</span>
         Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
