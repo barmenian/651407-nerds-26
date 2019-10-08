@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href=https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">  
 </head>
@@ -30,27 +30,30 @@
       <h2 class="visually-hidden">Наши предложения</h2>
       <ul class="offer-list">
         <li class="offer-item sites">
-          <img class="item__img item__img--red offer-style" alt="Веб-сайты">
+          <div class="item__img item__img--red offer-style">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним
             после того как увидит ваш сайт</p>
           <button class="offer__button offer__button--red button-style" type="button">Заказать</button>
+          </div>
         </li>
 
         <li class="offer-item apps">         
-          <img class="item__img item__img--green offer-style" alt="Приложения">
+          <div class="item__img item__img--green offer-style">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в
             AppStore и Google Play</p>
           <button class="offer__button offer__button--green button-style" type="button">Заказать</button>
+          </div>
         </li>
 
         <li class="offer-item presentations">          
-          <img class="item__img item__img--yellow offer-style" alt="Презентации">
+          <div class="item__img item__img--yellow offer-style">
           <h3>Презентации</h3>
           <p>Вы даже не представляете,
             насколько вы изумительны</p>
           <button class="offer__button offer__button--yellow button-style" type="button">Заказать</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -68,7 +71,7 @@
         </p>
         <p>
           <label for="appointment-letter">Текст письма:</label>
-          <textarea id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
+          <textarea id="appointment-letter" name="letter" placeholder="В свободной форме">
             В свободной форме
           </textarea>
         </p>
