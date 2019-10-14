@@ -62,11 +62,29 @@ a {
 
 /*--*/
 
+.offer {
+    margin-bottom: 123px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+
 .offer-list {
+    display: flex;
+    justify-content: space-between;
+  
+    margin:0;
+    padding: 0;
+  
     list-style: none;
+    min-height: 348px;
 }
 
 .offer-item h3 {
+    width: 300px;
+    text-align: center;  
+    margin-bottom: 10px;  
+    min-height: 348px;
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
@@ -232,16 +250,26 @@ a {
 
 /*--*/
 
-.social {
+.main-footer {
+    color: #000000;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    text-align: center;
     list-style: none;
 }
 
 .footer-social__button {
+    display: flex;
+    justify-content: center;  
     width: 79px;
     height: 79px;
     list-style: none;
     text-align: center;
-    align-items: center;
+    align-items: center;  
     background-color: #e1e1e1;
     border-radius: 60px;
 }
@@ -260,7 +288,6 @@ a {
 }
 
 .footer-tegline {
-    font-size: 16px;
     line-height: 22px;
     text-align: left;
     color: #444444;
@@ -276,3 +303,127 @@ a {
 .popup-letter {
     display: none;
 }
+ 
+/*Сеточные стили*/
+
+  .main-footer {
+    min-height: 148px;
+}
+  
+  .main-footer .container {
+    display: flex;
+}
+  
+  .footer-social {
+    width: 250px;
+    min-height: 148px;
+    margin-right: 139px;
+}
+  
+  .footer-tegline {
+    width: 545px;
+  
+    min-height: 148px;
+}
+  
+  .main-header {
+    align-items: flex-start;
+    flex-direction: row;
+    min-height: 81px;
+    background-color: #eeeeee;
+}
+  
+  .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+    min-height: 81px;
+    background-color: #eeeeee;
+}    
+  
+  .main-catalog__title{
+    margin: 0;
+    margin-bottom: 116px;
+    padding: 0;
+  
+    /* Временно для сетки */
+    min-height: 55px;
+}  
+  
+  .tempalte-catalog {
+    width: 760px;
+    min-height: 1914px;
+  
+    font-size: 18px;
+    font-weight: bold;
+}  
+  
+  .template-catalog__item {
+    width: 360px;
+    margin-bottom: 33px;
+    margin-right: 40px;
+  
+    font-size: 14px;
+    font-weight: normal;
+    /* Временно для сетки */
+    min-height: 576px;
+}
+  
+  .template-catalog__item:nth-child(2n) {
+    margin-right: 0;
+}
+  
+  .template-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  
+    padding: 0;
+    margin-bottom: 60px;
+  
+    list-style: none;
+}
+  
+  .main-footer {
+    margin-top: 60px;
+} 
+  
+  .main-catalog__button {
+    width: 240px;
+    height: 50px;
+    font: inherit;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+  
+    background-color: #eeeeee;
+    border: none;
+}
+  
+  .main-catalog__button:hover {
+    background-color: #dfdfdf;
+}
+  
+  .main-catalog__button:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+  
+  .filter-block {
+    border: none;
+    list-style-type: none;
+}
+  
+  .filter-block__list {
+    list-style-type: none;
+}
+  .main-footer {
+    margin-top: 45px;
+}
+  
+  .main-footer .container {
+    display: flex;
+}
+  
+  
+  

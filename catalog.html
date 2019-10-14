@@ -25,13 +25,14 @@
     </nav>
   </header>
 
-  <main class="content">
+  <main class="main-catalog content">
+    <h1 class="main-catalog__title"> Магазин готовых шаблонов </h1>
     <section class="filters">
       <h2 class="visually-hidden">Опции</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-grid">
+        <fieldset class="filter-block">
           <legend>Сетка:</legend>
-          <ul>
+          <ul class="filter-block_list">
             <li>
               <input class="layout-group-radio" type="radio" name="layout-group" value="adaptive" id="filter-adaptive"
                 checked>
@@ -48,9 +49,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="filter-features">
+        <fieldset class="filter-block">
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="filter-block_list">
             <li>
               <input class="checkbox-filter" type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
@@ -68,47 +69,62 @@
               <label for="filter-cart">Корзина</label>
             </li>
           </ul>
-          <button type="submit" class="button">Показать</button>
         </fieldset>
+        <button class="main-catalog__button button-style" type="submit">Показать</button>
       </form>
     </section>
 
-    <ul class="template-list">
+    <section class="template-catalog__main-catalog template-catalog">
       <h2 class="visually-hidden">Примеры работ</h2>
-      <li class="template-item">
-        <img src="img-sedona.jpg" width="359" height="616" alt="Sedona">
-      </li>
-      <li class="template-item">
-        <img src="img-pink.jpg" width="359" height="616" alt="Pink">
-      </li>
-      <li class="template-item">
-        <img src="img-barbershop.jpg" width="359" height="616" alt="Borodinski">
-      </li>
-      <li class="template-item">
-        <img src="img-mishka.jpg" width="359" height="616" alt="Mishka">
-      </li>
-      <li class="template-item">
-        <img src="img-aplus.jpg" width="359" height="616" alt="A+">
-      </li>
-      <li class="template-item">
-        <img src="img-kvast.jpg" width="359" height="616" alt="Kvast">
-      </li>
-    </ul>
+      <ul class="template-catalog__list">
+        <li class="template-catalog__item">
+          <a class="template-catalog__link" href="#">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+        </li>
+        <li class="template-catalog__item">
+          <a class="template-catalog__link" href="#">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
+        </li>
+        <li class="template-catalog__item">
+          <a class="template-catalog__link" href="#">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
+        </li>
+        <li class="template-catalog__item">
+          <a class="template-catalog__link" href="#">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+        </li>
+        <li class="template-catalog__item">
+          <a class="template-catalog__link" href="#">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
+        </li>
+        <li class="template-catalog__item">
+          <a class="template-catalog__link" href="#">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
+        </li>
+      </ul>
+    </section>
 
   </main>
 
   <footer class="main-footer">
-    <div>
-      <ul class="social">
-        <li><a class="contact-button" href="#"><img src="img/vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
-        <li><a class="contact-button" href="#"><img src="img/fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
-        <li><a class="contact-button" href="#"><img src="img/insta-icon.svg" width="80" height="80" alt="Инстаграм"></a>
-        </li>
-      </ul>
-      <p class="footer-tegline"><span>Давайте дружить, это выгодно!</span>
-        Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </footer>
+      <div class="container">
+        <ul class="footer-social">
+          <li><a class="footer-social__button" href="#"><img src="img/vk-icon.svg" width="80" height="80"
+                alt="Вконтакте"></a>
+          </li>
+          <li><a class="footer-social__button" href="#"><img src="img/fb-icon.svg" width="80" height="80"
+                alt="Фейсбук"></a>
+          </li>
+          <li><a class="footer-social__button" href="#"><img src="img/insta-icon.svg" width="80" height="80"
+                alt="Инстаграм"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-tegline">
+        <p><span>Давайте дружить, это выгодно!</span>
+          Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
 </body>
 
 </html>
